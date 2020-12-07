@@ -7,13 +7,14 @@ var lastButtonPressEvent = {
 // remember how many times the buttons were pressed
 var buttonPressCounter = 0;
 
-// react on the "blinkingStateChanged" Event
+// react on the "Status" Event
 function handleStatus (event) {
     // read variables from the event
     let ev = JSON.parse(event.data);
     let evData = ev.data; // the data from the argon event: "started blinking" or "stopped blinking"
     let evDeviceId = ev.coreid; // the device id
     let evTimestamp = Date.parse(ev.published_at); // the timestamp of the event
+    
 
     // the data we want to send to the clients
     let data = {
@@ -37,8 +38,6 @@ function handleModus (event) {
     }
 
     sendData("Modus", data, evDeviceId, evTimestamp );
-
-    
 }
 
 exports.deviceIds = [];
