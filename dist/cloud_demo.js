@@ -10,6 +10,10 @@ var app = new Vue({
         blinking_0: false,        // true if device 0 is blinking.
         blinking_1: false,        // true if device 0 is blinking.
         // add your own variables here ...
+        kurven: "unknown",
+        beschl: "unknown",
+        brems: "unknown",
+        zAchse: "unknown",
     },
     // This function is executed once when the page is loaded.
     mounted: function () {
@@ -71,24 +75,13 @@ var app = new Vue({
                 })
         },
         // get the value of the variable "buttonState" on the device with number "nr" from your backend
-        getButtonState: function (nr) {
-            axios.get(rootUrl + "/api/device/" + nr + "/variable/buttonState")
+        getKurven: function (nr) {
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/kurven")
                 .then(response => {
                     // Handle the response from the server
-                    var buttonState = response.data.result;
-                    if (nr === 0) {
-                        this.buttonState_0 = buttonState;
-                    }
-                    else if (nr === 1) {
-                        this.buttonState_1 = buttonState;
-                    }
-                    else {
-                        console.log("unknown device number: " + nr);
-                    }
+                    this.kurven = response.data.result;
                 })
-                .catch(error => {
-                    alert("Could not read the button state of device number " + nr + ".\n\n" + error)
-                })
-        }
+                },
+        
     }
 })
