@@ -74,7 +74,7 @@ var app = new Vue({
                     alert("Could not call the function 'blinkRed' of device number " + nr + ".\n\n" + error)
                 })
         },
-        // get the value of the variable "buttonState" on the device with number "nr" from your backend
+        // get the value of the variable "kurven" on the device with number "nr" from your backend
         getKurven: function (nr) {
             axios.get(rootUrl + "/api/device/" + nr + "/variable/kurven")
                 .then(response => {
@@ -82,6 +82,21 @@ var app = new Vue({
                     this.kurven = response.data.result;
                 })
                 },
+        getBeschl: function (nr) {
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/beschl")
+                .then(response => {
+                // Handle the response from the server
+                this.beschl = response.data.result;
+                })
+                },
+
+        getBrems: function (nr) {
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/brems")
+                .then(response => {
+                // Handle the response from the server
+                this.brems = response.data.result;
+                })
+                },                
         
     }
 })
