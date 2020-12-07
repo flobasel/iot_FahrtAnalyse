@@ -13,23 +13,17 @@
 
         <h4>Events</h4>
         <!-- Sync example -->
-        <p>Buttons pressed within 1 second: {{ buttonsSync }}</p>
-
-        <!-- Counter example (received as event) -->
-        <p>Button press counter: {{ buttonPressCounter }}</p>
-
-        <!-- Blinking example (received as event) -->
-        <p>Device 0 is blinking: {{ blinking_0 }}</p>
-        <p>Device 1 is blinking: {{ blinking_1 }}</p>
+        <p>Status: {{ StatusEvent }}</p>
+        <p>Modus: {{ ModusEvent }}</p>
         
         <hr>
         <h4>Variables</h4>
         <!-- Read variables example -->
-        <p>Button state (0): {{ buttonState_0 }} </p>
+        <p>Anzahl Bremsungen: {{ buttonState_0 }} </p>
         <button v-on:click="getBrems(0)">Get Anzahl Bremsungen </button>
         <br>
-        <p>Button state (1): {{ buttonState_1 }} </p>
-        <button v-on:click="getBeschl(0)">Get Anzahl Beschleunigungen)</button>
+        <p>Anzahl Beschleunigungen: {{ buttonState_1 }} </p>
+        <button v-on:click="getBeschl(0)">Get Anzahl Beschleunigungen</button>
         <br>
         <p>Anzahl Kurven: {{ kurven }} </p>
         <button v-on:click="getKurven(0)">Get Anzahl Kurven </button>
@@ -37,9 +31,9 @@
         <hr>
         <h4>Functions</h4>
         <!-- Call functions example  -->
-        <p>Blink red</p>
-        <button v-on:click="blinkRed(0)">Blink Red (Device 0)</button>
-        <button v-on:click="blinkRed(1)">Blink Red (Device 1)</button>
+        <p>Slow Down</p>
+        <button v-on:click="slowDown(0)">Slow Down please</button>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

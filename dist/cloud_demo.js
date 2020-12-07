@@ -14,6 +14,8 @@ var app = new Vue({
         beschl: "unknown",
         brems: "unknown",
         zAchse: "unknown",
+        StatusEvent: "?",
+        ModusEvent: "?",
     },
     // This function is executed once when the page is loaded.
     mounted: function () {
@@ -35,37 +37,18 @@ var app = new Vue({
         },
         // react on events: update the variables to be displayed
         updateVariables(ev) {
-            // Event "buttonStateChanged"
-            if (ev.eventName === "buttonStateChanged") {
-                this.buttonPressCounter = ev.eventData.counter;
-                if (ev.eventData.message === "pressed") {
-                    this.buttonsSync = ev.eventData.pressedSync;
-                }
+            // Event "Status"
+            if (ev.eventName === "Status") {
+                this.StatusEvent = ev.eventData.message;
             }
-            // Event "blinkingStateChanged"
-            else if (ev.eventName === "blinkingStateChanged") {
-                if (ev.eventData.message === "started blinking") {
-                    if (ev.deviceNumber === 0) {
-                        this.blinking_0 = true;
-                    }
-                    else if (ev.deviceNumber === 1) {
-                        this.blinking_1 = true;
-                    }
-                }
-                if (ev.eventData.message === "stopped blinking") {
-                    if (ev.deviceNumber === 0) {
-                        this.blinking_0 = false;
-                    }
-                    else if (ev.deviceNumber === 1) {
-                        this.blinking_1 = false;
-                    }
-                }
+            if (ev.eventName === "Modus") {
+                this.ModusEvent = ev.eventData.message;
             }
+            
         },
-        // call the function "blinkRed" in your backend
-        blinkRed: function (nr) {
-            var duration = 2000; // blinking duration in milliseconds
-            axios.post(rootUrl + "/api/device/" + nr + "/function/blinkRed", { arg: duration })
+        // call the function "slowDown" in your backend
+        slowDown: function (nr) {
+            axios.post(rootUrl + "/api/device/" + nr + "/function/slowDown", { arg: "" })
                 .then(response => {
                     // Handle the response from the server
                     console.log(response.data); // we could to something meaningful with the return value here ... 
