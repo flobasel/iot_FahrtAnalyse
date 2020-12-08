@@ -13,16 +13,16 @@
 
         <h4>Events</h4>
         <!-- Sync example -->
-        <p>Status: {{ StatusEvent }}</p>
-        <p>Modus: {{ ModusEvent }}</p>
+        <p>Aktueller Status: {{ StatusEvent }}</p>
+        <p>Aktiver Modus: {{ ModusEvent }}</p>
         
         <hr>
         <h4>Variables</h4>
         <!-- Read variables example -->
-        <p>Anzahl Bremsungen: {{ buttonState_0 }} </p>
+        <p>Anzahl Bremsungen: {{ brems }} </p>
         <button v-on:click="getBrems(0)">Get Anzahl Bremsungen </button>
         <br>
-        <p>Anzahl Beschleunigungen: {{ buttonState_1 }} </p>
+        <p>Anzahl Beschleunigungen: {{ beschl }} </p>
         <button v-on:click="getBeschl(0)">Get Anzahl Beschleunigungen</button>
         <br>
         <p>Anzahl Kurven: {{ kurven }} </p>
