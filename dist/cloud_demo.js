@@ -1,5 +1,7 @@
 var rootUrl = window.location.origin; // get the root URL, e.g. https://example.herokuapp.com
 
+
+
 var app = new Vue({
     el: "#app",
     data: {
@@ -60,7 +62,7 @@ var app = new Vue({
                 })
                 },
         getBeschl: function (nr) {
-            axios.get(rootUrl + "/api/device/" + nr + "/variable/beschl")
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/beschleunigungen")
                 .then(response => {
                 // Handle the response from the server
                 this.beschl = response.data.result;
@@ -68,7 +70,7 @@ var app = new Vue({
                 },
 
         getBrems: function (nr) {
-            axios.get(rootUrl + "/api/device/" + nr + "/variable/brems")
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/bremsungen")
                 .then(response => {
                 // Handle the response from the server
                 this.brems = response.data.result;
