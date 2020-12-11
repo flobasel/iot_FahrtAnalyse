@@ -39,6 +39,21 @@ function handleModus (event) {
     sendData("Modus", data, evDeviceId, evTimestamp );
 }
 
+function handleScores (event) {
+    // read variables from the event
+    let ev = JSON.parse(event.data);
+    let evData = ev.data; // the data from the argon event: "pressed" or "released"
+    let evDeviceId = ev.coreid; // the device id
+    let evTimestamp = Date.parse(ev.published_at); // the timestamp of the event
+    let data = {
+        message: evData, // just forward "started blinking" or "stopped blinking"
+    }
+
+    sendData("Scores", data, evDeviceId, evTimestamp );
+}
+
+
+
 function sendData(evName, evData, evDeviceId, evTimestamp ) {
     
     // map device id to device nr
@@ -62,3 +77,4 @@ exports.sse = null;
 // export your own functions here as well
 exports.handleStatus = handleStatus;
 exports.handleModus = handleModus;
+exports.handleScores = handleScores;

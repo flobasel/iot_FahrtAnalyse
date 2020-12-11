@@ -1,3 +1,19 @@
+:root {
+  --lichtL1: 0.3;
+  --lichtL2: 0.3;
+  --lichtL3: 0.3;
+  --lichtL4: 0.3;
+  --lichtL5: 0.3;
+  --lichtL6: 0.3;
+  --lichtL7: 0.3;
+  --lichtL8: 0.3;
+  --lichtL9: 0.3;
+  --lichtL10: 0.3;
+  --lichtL11: 0.3;
+  --lichtL12: 0.3;
+}
+
+
 test1 {
     color: red;
 }
@@ -6,7 +22,7 @@ test1 {
 .dot12 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 0, 0, 0.3);
+    background-color: rgb(255, 0, 0, var(--lichtL12));
     border-style: solid;
     border-color: rgba(255, 0, 0);
     border-radius: 50%;
@@ -16,7 +32,7 @@ test1 {
   .dot11 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 14, 0, 0.3);
+    background-color: rgb(255, 14, 0, var(--lichtL11));
     border-style: solid;
     border-color: rgba(255, 14, 0);
     border-radius: 50%;
@@ -26,7 +42,7 @@ test1 {
   .dot10 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 43, 0, 0.3);
+    background-color: rgb(255, 43, 0, var(--lichtL10));
     border-style: solid;
     border-color: rgba(255, 43, 0);
     border-radius: 50%;
@@ -37,7 +53,7 @@ test1 {
   .dot9 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 72, 0, 0.3);
+    background-color: rgb(255, 72, 0, var(--lichtL9));
     border-style: solid;
     border-color: rgba(255, 72, 0);
     border-radius: 50%;
@@ -47,7 +63,7 @@ test1 {
   .dot8 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 101, 0, 0.3);
+    background-color: rgb(255, 101, 0, var(--lichtL8));
     border-style: solid;
     border-color: rgba(255, 101, 0);
     border-radius: 50%;
@@ -57,7 +73,7 @@ test1 {
   .dot7 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 130, 0, 0.3);
+    background-color: rgb(255, 130, 0, var(--lichtL7));
     border-style: solid;
     border-color: rgba(255, 130, 0);
     border-radius: 50%;
@@ -67,7 +83,7 @@ test1 {
   .dot6 {
     height: 25px;
     width: 25px;
-    background-color: rgb(230, 155, 0, 0.3);
+    background-color: rgb(230, 155, 0, var(--lichtL6));
     border-style: solid;
     border-color: rgba(230, 155, 0);
     border-radius: 50%;
@@ -77,7 +93,7 @@ test1 {
   .dot5 {
     height: 25px;
     width: 25px;
-    background-color: rgb(179, 177, 0, 0.3);
+    background-color: rgb(179, 177, 0, var(--lichtL5));
     border-style: solid;
     border-color: rgba(179, 177, 0);
     border-radius: 50%;
@@ -87,7 +103,7 @@ test1 {
   .dot4 {
     height: 25px;
     width: 25px;
-    background-color: rgb(128, 200, 0, 0.3);
+    background-color: rgb(128, 200, 0, var(--lichtL4));
     border-style: solid;
     border-color: rgba(128, 200, 0);
     border-radius: 50%;
@@ -97,7 +113,7 @@ test1 {
   .dot3 {
     height: 25px;
     width: 25px;
-    background-color: rgb(77, 222, 0, 0.3);
+    background-color: rgb(77, 222, 0, var(--lichtL3));
     border-style: solid;
     border-color: rgba(77, 222, 0);
     border-radius: 50%;
@@ -107,7 +123,7 @@ test1 {
   .dot2 {
     height: 25px;
     width: 25px;
-    background-color: rgb(26, 244, 0, 0.3);
+    background-color: rgb(26, 244, 0, var(--lichtL2));
     border-style: solid;
     border-color: rgba(26, 244, 0);
     border-radius: 50%;
@@ -117,9 +133,39 @@ test1 {
   .dot1 {
     height: 25px;
     width: 25px;
-    background-color: rgba(0, 255, 0, 0.3);
+    background-color: rgba(0, 255, 0, var(--lichtL1));
     border-style: solid;
     border-color: rgba(0, 255, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dotm1 {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(0, 255, 255);
+    border-style: solid;
+    border-color: rgba(0, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  
+  .dotm2 {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 0, 255);
+    border-style: solid;
+    border-color: rgba(255, 0, 255);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dotmw {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255);
+    border-style: solid;
+    border-color: rgba(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
   }

@@ -61,6 +61,7 @@ for (let device of devices) {
     /////////////////////////////////////////////////////////
     source.addEventListener('Status', eventListeners.handleStatus)
     source.addEventListener('Modus', eventListeners.handleModus)
+    source.addEventListener('Scores', eventListeners.handleScores)
 
     /////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////

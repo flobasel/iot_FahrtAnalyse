@@ -1,7 +1,5 @@
 var rootUrl = window.location.origin; // get the root URL, e.g. https://example.herokuapp.com
 
-
-
 var app = new Vue({
     el: "#app",
     data: {
@@ -10,8 +8,12 @@ var app = new Vue({
         beschl: "unknown",
         brems: "unknown",
         zAchse: "unknown",
+        scoreF: 0,
+        scoreU: 0,
         StatusEvent: "?",
         ModusEvent: "?",
+        ScoresEvent: "?",
+        
     },
     // This function is executed once when the page is loaded.
     mounted: function () {
@@ -39,6 +41,67 @@ var app = new Vue({
             }
             if (ev.eventName === "Modus") {
                 this.ModusEvent = ev.eventData.message;
+            }
+            if (ev.eventName === "Scores") {
+                this.ScoresEvent = ev.eventData.message;
+                this.getScoreF(0);
+                this.getScoreU(0);
+
+                setTimeout(() => {   
+
+                
+                        if (this.scoreF > 11){
+                        document.documentElement.style.setProperty('--lichtL12', 1);
+                        }
+                        if (this.scoreF > 10){
+                        document.documentElement.style.setProperty('--lichtL11', 1);
+                        }
+                        
+                        if (this.scoreF > 9){
+                        document.documentElement.style.setProperty('--lichtL10', 1);
+                        }
+                        
+                        if (this.scoreF > 8) {
+                        document.documentElement.style.setProperty('--lichtL9', 1);
+                        }
+                        
+                        if (this.scoreF > 7) {
+                        document.documentElement.style.setProperty('--lichtL8', 1);
+                        }
+                        
+                        if (this.scoreF > 6) {
+                        document.documentElement.style.setProperty('--lichtL7', 1);
+                        }
+                        
+                        if (this.scoreF > 5) {
+                        document.documentElement.style.setProperty('--lichtL6', 1);
+                        }
+                        
+                        if (this.scoreF > 4) {
+                        document.documentElement.style.setProperty('--lichtL5', 1);
+                        }
+                        
+                        if (this.scoreF > 3) {
+                        document.documentElement.style.setProperty('--lichtL4', 1);
+                        }
+                        
+                        if (this.scoreF > 2) {
+                        document.documentElement.style.setProperty('--lichtL3', 1);
+                        }
+                        
+                        if (this.scoreF > 1) {
+                        document.documentElement.style.setProperty('--lichtL2', 1);
+                        }
+                        
+                        if (this.scoreF > 0) {
+                        document.documentElement.style.setProperty('--lichtL1', 1);
+                        }
+
+                    }, 1000);
+
+
+
+
             }
             
         },
@@ -75,7 +138,23 @@ var app = new Vue({
                 // Handle the response from the server
                 this.brems = response.data.result;
                 })
-                },                
+                },
+        
+        getScoreF: function (nr) {
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/scoreF")
+                .then(response => {
+                // Handle the response from the server
+                this.scoreF = response.data.result;
+                })
+                },
+
+        getScoreU: function (nr) {
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/scoreU")
+            .then(response => {
+            // Handle the response from the server
+            this.scoreU = response.data.result;
+            })
+            }, 
         
     }
 })
