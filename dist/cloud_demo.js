@@ -47,7 +47,35 @@ var app = new Vue({
                 this.getScoreF(0);
                 this.getScoreU(0);
 
-                setTimeout(() => {   
+                setTimeout(() => {
+
+                        document.documentElement.style.setProperty('--lichtL12', 0.3);
+                        document.documentElement.style.setProperty('--lichtL11', 0.3);
+                        document.documentElement.style.setProperty('--lichtL10', 0.3);
+                        document.documentElement.style.setProperty('--lichtL9', 0.3);
+                        document.documentElement.style.setProperty('--lichtL8', 0.3);
+                        document.documentElement.style.setProperty('--lichtL7', 0.3);
+                        document.documentElement.style.setProperty('--lichtL6', 0.3);
+                        document.documentElement.style.setProperty('--lichtL5', 0.3);
+                        document.documentElement.style.setProperty('--lichtL4', 0.3);
+                        document.documentElement.style.setProperty('--lichtL3', 0.3);
+                        document.documentElement.style.setProperty('--lichtL2', 0.3);
+                        document.documentElement.style.setProperty('--lichtL1', 0.3);
+
+                        document.documentElement.style.setProperty('--lichtU12', 0.3);
+                        document.documentElement.style.setProperty('--lichtU11', 0.3);
+                        document.documentElement.style.setProperty('--lichtU10', 0.3);
+                        document.documentElement.style.setProperty('--lichtU9', 0.3);
+                        document.documentElement.style.setProperty('--lichtU8', 0.3);
+                        document.documentElement.style.setProperty('--lichtU7', 0.3);
+                        document.documentElement.style.setProperty('--lichtU6', 0.3);
+                        document.documentElement.style.setProperty('--lichtU5', 0.3);
+                        document.documentElement.style.setProperty('--lichtU4', 0.3);
+                        document.documentElement.style.setProperty('--lichtU3', 0.3);
+                        document.documentElement.style.setProperty('--lichtU2', 0.3);
+                        document.documentElement.style.setProperty('--lichtU1', 0.3);
+
+                    
 
                 
                         if (this.scoreF > 11){
@@ -96,6 +124,53 @@ var app = new Vue({
                         if (this.scoreF > 0) {
                         document.documentElement.style.setProperty('--lichtL1', 1);
                         }
+
+                        if (this.scoreU > 11){
+                            document.documentElement.style.setProperty('--lichtU12', 1);
+                            }
+                        if (this.scoreU > 10){
+                            document.documentElement.style.setProperty('--lichtU11', 1);
+                            }
+                            
+                        if (this.scoreU > 9){
+                            document.documentElement.style.setProperty('--lichtU10', 1);
+                            }
+                            
+                        if (this.scoreU > 8) {
+                            document.documentElement.style.setProperty('--lichtU9', 1);
+                            }
+                            
+                        if (this.scoreU > 7) {
+                            document.documentElement.style.setProperty('--lichtU8', 1);
+                            }
+                            
+                        if (this.scoreU > 6) {
+                            document.documentElement.style.setProperty('--lichtU7', 1);
+                            }
+                            
+                        if (this.scoreU > 5) {
+                            document.documentElement.style.setProperty('--lichtU6', 1);
+                            }
+                            
+                        if (this.scoreU > 4) {
+                            document.documentElement.style.setProperty('--lichtU5', 1);
+                            }
+                            
+                        if (this.scoreU > 3) {
+                            document.documentElement.style.setProperty('--lichtU4', 1);
+                            }
+                            
+                        if (this.scoreU > 2) {
+                            document.documentElement.style.setProperty('--lichtU3', 1);
+                            }
+                            
+                        if (this.scoreU > 1) {
+                            document.documentElement.style.setProperty('--lichtU2', 1);
+                            }
+                            
+                        if (this.scoreU > 0) {
+                            document.documentElement.style.setProperty('--lichtU1', 1);
+                            }
 
                     }, 1000);
 

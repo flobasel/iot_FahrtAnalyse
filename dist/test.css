@@ -11,6 +11,21 @@
   --lichtL10: 0.3;
   --lichtL11: 0.3;
   --lichtL12: 0.3;
+  --lichtU1: 0.3;
+  --lichtU2: 0.3;
+  --lichtU3: 0.3;
+  --lichtU4: 0.3;
+  --lichtU5: 0.3;
+  --lichtU6: 0.3;
+  --lichtU7: 0.3;
+  --lichtU8: 0.3;
+  --lichtU9: 0.3;
+  --lichtU10: 0.3;
+  --lichtU11: 0.3;
+  --lichtU12: 0.3;
+
+
+
 }
 
 
@@ -166,6 +181,127 @@ test1 {
     background-color: rgba(255, 255, 255);
     border-style: solid;
     border-color: rgba(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot12u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 0, 0, var(--lichtU12));
+    border-style: solid;
+    border-color: rgba(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot11u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 14, 0, var(--lichtU11));
+    border-style: solid;
+    border-color: rgba(255, 14, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot10u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 43, 0, var(--lichtU10));
+    border-style: solid;
+    border-color: rgba(255, 43, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .dot9u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 72, 0, var(--lichtU9));
+    border-style: solid;
+    border-color: rgba(255, 72, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot8u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 101, 0, var(--lichtU8));
+    border-style: solid;
+    border-color: rgba(255, 101, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot7u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 130, 0, var(--lichtU7));
+    border-style: solid;
+    border-color: rgba(255, 130, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot6u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(230, 155, 0, var(--lichtU6));
+    border-style: solid;
+    border-color: rgba(230, 155, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot5u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(179, 177, 0, var(--lichtU5));
+    border-style: solid;
+    border-color: rgba(179, 177, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot4u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(128, 200, 0, var(--lichtU4));
+    border-style: solid;
+    border-color: rgba(128, 200, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot3u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(77, 222, 0, var(--lichtU3));
+    border-style: solid;
+    border-color: rgba(77, 222, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot2u {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(26, 244, 0, var(--lichtU2));
+    border-style: solid;
+    border-color: rgba(26, 244, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot1u {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(0, 255, 0, var(--lichtU1));
+    border-style: solid;
+    border-color: rgba(0, 255, 0);
     border-radius: 50%;
     display: inline-block;
   }
