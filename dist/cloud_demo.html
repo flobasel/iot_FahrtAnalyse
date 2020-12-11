@@ -20,22 +20,22 @@
         <p>Aktiver Modus: {{ ModusEvent }}</p>
         
         <hr>
-        <h4>Variables</h4>
-        <!-- Read variables example -->
-        <p>Anzahl Bremsungen: {{ brems }} </p>
-        <button v-on:click="getBrems(0)">Get Anzahl Bremsungen </button>
-        <br>
-        <p>Anzahl Beschleunigungen: {{ beschl }} </p>
-        <button v-on:click="getBeschl(0)">Get Anzahl Beschleunigungen</button>
-        <br>
-        <p>Anzahl Kurven: {{ kurven }} </p>
-        <button v-on:click="getKurven(0)">Get Anzahl Kurven </button>
+        <h4>Statusanzeige</h4>
+        <p>Fahrstilmodus:</p>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+        <span class="dot5"></span>
+        <span class="dot6"></span>
+        <span class="dot7"></span>
+        <span class="dot8"></span>
+        <span class="dot9"></span>
+        <span class="dot10"></span>
+        <span class="dot11"></span>
+        <span class="dot12"></span>
 
-        <br><br>
-    
-
-
-
+        <p>Fahrstilmodus:</p>
         <span class="dot1"></span>
         <span class="dot2"></span>
         <span class="dot3"></span>
@@ -50,11 +50,24 @@
         <span class="dot12"></span>
 
 
-        
-
 
         <hr>
-        <test1>Functions</test1>
+        <h4>Variables</h4>
+        <!-- Read variables example -->
+        <p>Anzahl Bremsungen: {{ brems }} </p>
+        <button v-on:click="getBrems(0)">Get Anzahl Bremsungen </button>
+        <br>
+        <p>Anzahl Beschleunigungen: {{ beschl }} </p>
+        <button v-on:click="getBeschl(0)">Get Anzahl Beschleunigungen</button>
+        <br>
+        <p>Anzahl Kurven: {{ kurven }} </p>
+        <button v-on:click="getKurven(0)">Get Anzahl Kurven </button>
+
+        <br><br>
+    
+
+        <hr>
+        <h4>Functions</h4>
         <!-- Call functions example  -->
         <p>Slow Down</p>
         <button v-on:click="slowDown(0)">Slow Down please</button>

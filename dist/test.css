@@ -6,7 +6,9 @@ test1 {
 .dot12 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(255, 0, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -14,7 +16,9 @@ test1 {
   .dot11 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 14, 0);
+    background-color: rgb(255, 14, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(255, 14, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -22,7 +26,9 @@ test1 {
   .dot10 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 43, 0);
+    background-color: rgb(255, 43, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(255, 43, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -31,7 +37,9 @@ test1 {
   .dot9 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 72, 0);
+    background-color: rgb(255, 72, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(255, 72, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -39,7 +47,9 @@ test1 {
   .dot8 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 101, 0);
+    background-color: rgb(255, 101, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(255, 101, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -47,7 +57,9 @@ test1 {
   .dot7 {
     height: 25px;
     width: 25px;
-    background-color: rgb(255, 130, 0);
+    background-color: rgb(255, 130, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(255, 130, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -55,7 +67,9 @@ test1 {
   .dot6 {
     height: 25px;
     width: 25px;
-    background-color: rgb(230, 155, 0);
+    background-color: rgb(230, 155, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(230, 155, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -63,7 +77,9 @@ test1 {
   .dot5 {
     height: 25px;
     width: 25px;
-    background-color: rgb(179, 177, 0);
+    background-color: rgb(179, 177, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(179, 177, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -71,7 +87,9 @@ test1 {
   .dot4 {
     height: 25px;
     width: 25px;
-    background-color: rgb(128, 200, 0);
+    background-color: rgb(128, 200, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(128, 200, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -79,7 +97,9 @@ test1 {
   .dot3 {
     height: 25px;
     width: 25px;
-    background-color: rgb(77, 222, 0);
+    background-color: rgb(77, 222, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(77, 222, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -87,7 +107,9 @@ test1 {
   .dot2 {
     height: 25px;
     width: 25px;
-    background-color: rgb(26, 244, 0);
+    background-color: rgb(26, 244, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(26, 244, 0);
     border-radius: 50%;
     display: inline-block;
   }
@@ -95,8 +117,9 @@ test1 {
   .dot1 {
     height: 25px;
     width: 25px;
-    background-color: rgb(0, 255, 0);
-    border-color: black;
+    background-color: rgba(0, 255, 0, 0.3);
+    border-style: solid;
+    border-color: rgba(0, 255, 0);
     border-radius: 50%;
     display: inline-block;
   }
