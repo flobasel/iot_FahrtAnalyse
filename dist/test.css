@@ -3,10 +3,100 @@ test1 {
 }
 
 
-.dot {
+.dot12 {
     height: 25px;
     width: 25px;
-    background-color: rgb(226, 23, 23);
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot11 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 14, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot10 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 43, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .dot9 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 72, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot8 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 101, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot7 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 130, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot6 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(230, 155, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot5 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(179, 177, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot4 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(128, 200, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot3 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(77, 222, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot2 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(26, 244, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 255, 0);
+    border-color: black;
     border-radius: 50%;
     display: inline-block;
   }
