@@ -172,7 +172,7 @@ var app = new Vue({
                             document.documentElement.style.setProperty('--lichtU1', 1);
                             }
 
-                    }, 1000);
+                    }, 2000);
 
 
 

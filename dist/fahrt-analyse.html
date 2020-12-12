@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Functions and Variables Example</title>
+    <title>Fahrt-Analyse</title>
 
     <link href= "test.css" rel = "stylesheet" type = "text/css">
 
@@ -21,7 +21,7 @@
         
         <hr>
         <h4>Statusanzeige</h4>
-        <p>Fahrstilmodus:</p>
+        <p>Fahrstilmodus: Score = {{ scoreF }} </p>
         <span class="dotm1"></span>
         <span class="dotm1"></span>
         <span class="dotmw"></span>
@@ -38,7 +38,7 @@
         <span class="dot11"></span>
         <span class="dot12"></span>
 
-        <p>Übelkeitsmodusmodus:</p>
+        <p>Übelkeitsmodusmodus: Score = {{ scoreU }} </p>
         <span class="dotm2"></span>
         <span class="dotm2"></span>
         <span class="dotmw"></span>
@@ -69,9 +69,9 @@
         <p>Anzahl Kurven: {{ kurven }} </p>
         <button v-on:click="getKurven(0)">Get Anzahl Kurven </button>
 
-        <p>ScoreF: {{ scoreF }} </p>
-        <button v-on:click="getScoreF(0)">Get ScoreF </button>
-        <p>ScoreU: {{ scoreU }} </p>
+        
+        
+        
 
         <br><br>
     
