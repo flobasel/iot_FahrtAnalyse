@@ -13,6 +13,7 @@ var app = new Vue({
         StatusEvent: "?",
         ModusEvent: "?",
         ScoresEvent: "?",
+        minuten: 0,
         
     },
     // This function is executed once when the page is loaded.
@@ -46,6 +47,7 @@ var app = new Vue({
                 this.ScoresEvent = ev.eventData.message;
                 this.getScoreF(0);
                 this.getScoreU(0);
+                this.getMinuten(0);
 
                 setTimeout(() => {
 
@@ -228,6 +230,13 @@ var app = new Vue({
             .then(response => {
             // Handle the response from the server
             this.scoreU = response.data.result;
+            })
+            }, 
+        getMinuten: function (nr) {
+            axios.get(rootUrl + "/api/device/" + nr + "/variable/minuten")
+            .then(response => {
+            // Handle the response from the server
+            this.minuten = response.data.result;
             })
             }, 
         
